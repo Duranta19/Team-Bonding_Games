@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 
 export default function authLayout({ children }: { children: ReactNode }) {
   const { isMobile } = useDeviceWidth();
+  if (isMobile ===  null) return null;
   if (!isMobile) {
     return <MobileScreenWarning />;
   }
