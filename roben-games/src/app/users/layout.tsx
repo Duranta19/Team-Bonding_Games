@@ -1,10 +1,10 @@
 "use client";
-
+import UserNavSidebar from "@/common/components/UserNavSidebar.component";
 import MobileScreenWarning from "@/common/components/MobileScreenWarning.component";
 import { useDeviceWidth } from "@/hook/useDeviceWidth.hook";
 import { ReactNode } from "react";
 
-export default function AuthLayout({ children }: { children: ReactNode }) {
+export default function UserLayout({ children }: { children: ReactNode }) {
   const { isMobile } = useDeviceWidth();
   if (isMobile === null) return null;
   if (!isMobile) {
@@ -12,8 +12,11 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
   }
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="bg-purple-900 w-full">
-        <div className="flex items-center justify-start h-full py-4 pl-2">
+      <div className="bg-purple-900 w-full flex items-center py-4">
+        <div className="flex-shrink-0">
+          <UserNavSidebar />
+        </div>
+        <div className="flex-grow flex items-center justify-center">
           <span className="text-2xl font-bold text-white">RoBen Games</span>
         </div>
       </div>

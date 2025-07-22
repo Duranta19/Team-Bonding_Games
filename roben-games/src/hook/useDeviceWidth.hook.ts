@@ -9,12 +9,6 @@ export const useDeviceWidth = () => {
     const handleResize = () => {
       const isMobileScreen = window.innerWidth < 450;
       setIsMobile(isMobileScreen);
-
-      // if (isMobileScreen) {
-      //   router.replace("/auth/signin");
-      // } else {
-      //   message.warning("This app is best viewed on mobile.");
-      // }
     };
 
     handleResize(); // run on mount
@@ -22,6 +16,5 @@ export const useDeviceWidth = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, [router]);
-  console.log(isMobile);
-return {isMobile}
+  return { isMobile };
 };

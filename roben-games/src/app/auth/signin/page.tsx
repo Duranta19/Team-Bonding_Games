@@ -2,7 +2,7 @@
 import { Button, Form, Input } from "antd";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const [form] = Form.useForm();
   return (
     <main>
@@ -49,4 +49,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

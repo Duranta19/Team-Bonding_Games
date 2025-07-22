@@ -1,7 +1,7 @@
 "use client";
 import { Button, Form, Input } from "antd";
 
-const page = () => {
+const Page = () => {
   const [form] = Form.useForm();
   return (
     <main>
@@ -59,4 +59,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

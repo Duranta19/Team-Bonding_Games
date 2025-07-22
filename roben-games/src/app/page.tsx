@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Card, message } from "antd";
+import MobileScreenWarning from "@/common/components/MobileScreenWarning.component";
+import { message } from "antd";
 import { useRouter } from "next/navigation";
-import MobileScreenWarning from "@/components/MobileScreenWarning.component";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const router = useRouter();
