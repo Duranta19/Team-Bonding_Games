@@ -15,7 +15,7 @@ export default function Home() {
       setIsMobile(isMobileScreen);
 
       if (isMobileScreen) {
-        router.replace("/auth/signup");
+        router.replace("/auth/signin");
       } else {
         message.warning("This app is best viewed on mobile.");
       }

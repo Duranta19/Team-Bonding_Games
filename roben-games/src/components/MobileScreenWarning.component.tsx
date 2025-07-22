@@ -15,8 +15,6 @@ export default function MobileScreenWarning() {
   }, []);
 
   if (isMobile) {
-    // Optionally, auto-redirect mobile users away from pages that trigger this
-    // router.replace('/auth/signup');
     return null;
   }
 
