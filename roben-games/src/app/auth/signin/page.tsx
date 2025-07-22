@@ -8,7 +8,7 @@ const page = () => {
     <main>
       <div className="md:hidden w-4/5 m-8 p-4 rounded-3xl shadow-lg shadow-indigo-500/50">
         <div className="flex items-center justify-center">
-          <h1 className="text-3xl font-bold text-center">Signin</h1>
+          <h1 className="text-3xl font-bold text-center">Sign in</h1>
         </div>
         <Form form={form} layout="vertical">
           <Form.Item

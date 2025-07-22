@@ -19,7 +19,7 @@ export default function MobileScreenWarning() {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-50 p-4">
       <Alert
         className="max-w-md w-full rounded-lg shadow-lg"
         type="warning"
